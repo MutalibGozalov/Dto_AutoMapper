@@ -18,7 +18,8 @@ public class AutoMapper<T, D>
             {
                 if (dtoProp.Name == modelProp.Name)
                 {
-                    dtoProp.SetValue((D)dtoObj, dtoProp.GetValue((T)modelObj));
+                    dtoProp.SetValue((D)dtoObj, modelProp.GetValue((T)modelObj));
+                    
                 }
             }
         }
